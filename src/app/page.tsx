@@ -523,7 +523,7 @@ export default function SadorFashionStore() {
             </Link>
           </div>
 
-          <div className="flex items-center justify-center space-x-3 sm:space-x-4 text-gray-700 bg-gradient-to-r from-green-100 to-emerald-100 rounded-full px-6 sm:px-8 py-4 sm:py-6 inline-flex shadow-xl border border-green-200">
+        <div className="inline-flex items-center justify-center space-x-3 sm:space-x-4 text-gray-700 bg-gradient-to-r from-green-100 to-emerald-100 rounded-full px-6 sm:px-8 py-4 sm:py-6 shadow-xl border border-green-200">
             <Phone className="h-5 w-5 sm:h-6 sm:w-6 text-green-600" />
             <span className="font-bold text-base sm:text-lg">Call us: 0922796624</span>
           </div>
