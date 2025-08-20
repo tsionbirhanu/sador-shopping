@@ -1,5 +1,3 @@
-
-
 "use client"
 
 import { Button } from "@/components/ui/button"
@@ -97,7 +95,7 @@ export default function SadorFashionStore() {
       <div className="bg-gradient-to-r from-pink-500 via-red-500 to-orange-500 text-white py-2 sm:py-3 px-2 sm:px-4 text-center shadow-lg">
         <div className="max-w-7xl mx-auto">
           <p className="text-xs sm:text-sm font-bold tracking-wide">
-             FREE DELIVERY 5,000+ ETB • SPECIAL DISCOUNTS 3+ ITEMS 
+            ✨ FREE DELIVERY 5,000+ ETB • SPECIAL DISCOUNTS 3+ ITEMS ✨
           </p>
         </div>
       </div>
@@ -202,11 +200,11 @@ export default function SadorFashionStore() {
         <div className="relative z-10 text-center text-white max-w-6xl mx-auto px-4 sm:px-6">
           <div className="space-y-6 sm:space-y-10">
             <div className="space-y-4 sm:space-y-6">
-              <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-black leading-none tracking-tighter text-white drop-shadow-2xl">
+              <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black leading-none tracking-tighter text-white drop-shadow-2xl">
                 SADOR
               </h1>
               <div className="w-20 sm:w-32 h-1 sm:h-2 bg-gradient-to-r from-yellow-400 to-orange-400 mx-auto shadow-lg rounded-full"></div>
-              <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold tracking-[0.1em] sm:tracking-[0.2em] opacity-95 drop-shadow-lg text-yellow-300">
+              <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold tracking-[0.1em] sm:tracking-[0.2em] opacity-95 drop-shadow-lg text-yellow-300">
                 STYLE MEETS EXPECTATION
               </p>
             </div>
@@ -231,7 +229,7 @@ export default function SadorFashionStore() {
         </div>
       </section>
 
-       <section id="about" className="py-12 sm:py-16 lg:py-20 bg-gradient-to-br from-pink-50 via-white to-orange-50">
+      <section id="about" className="py-12 sm:py-16 lg:py-20 bg-gradient-to-br from-pink-50 via-white to-orange-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-12">
           <div className="text-center mb-12 sm:mb-16">
             <div className="space-y-4 sm:space-y-6">
@@ -243,29 +241,26 @@ export default function SadorFashionStore() {
           </div>
 
           <div className="text-center space-y-6 sm:space-y-8">
-            <div className="space-y-4 sm:space-y-6">
-              <h3 className="text-2xl sm:text-3xl lg:text-4xl font-black text-gray-900 leading-tight">
-                Your Premier Fashion Destination
-              </h3>
-              <p className="text-lg sm:text-xl text-gray-700 leading-relaxed max-w-3xl mx-auto">
+            <h3 className="text-2xl sm:text-3xl lg:text-4xl font-black text-gray-900 leading-tight">
+              Your Premier Fashion Destination
+            </h3>
+            <div className="space-y-4 sm:space-y-6 max-w-3xl mx-auto">
+              <p className="text-lg sm:text-xl text-gray-700 leading-relaxed">
                 Sador Shopping & Fashion is your go-to online store for trendy, high-quality clothing and unique gift
-                items.
-              </p>
-              <p className="text-base sm:text-lg text-gray-600 leading-relaxed max-w-2xl mx-auto">
-                From stylish outfits to elegant perfumes, bags, and accessories, we bring you products that match your
+                items. From stylish outfits to elegant perfumes, bags, and accessories, we bring you products that match your
                 style and personality.
               </p>
-            </div>
-
-            <div className="bg-gradient-to-r from-pink-500 to-orange-500 p-8 sm:p-10 rounded-3xl shadow-2xl max-w-2xl mx-auto">
-              <p className="text-white font-black text-xl sm:text-2xl leading-relaxed">
+              {/* <p className="text-base sm:text-lg text-gray-600 leading-relaxed">
+                From stylish outfits to elegant perfumes, bags, and accessories, we bring you products that match your
+                style and personality.
+              </p> */}
+              <p className="text-lg sm:text-xl font-bold text-gray-800 leading-relaxed">
                 Our goal is to make shopping easy, affordable, and exciting for everyone.
               </p>
             </div>
           </div>
         </div>
       </section>
-
 
       <section id="shop" className="py-16 sm:py-20 lg:py-28 bg-gradient-to-br from-pink-50 via-white to-orange-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
@@ -282,9 +277,9 @@ export default function SadorFashionStore() {
           </div>
 
           <div className="grid sm:grid-cols-2 gap-6 sm:gap-8 mb-16 sm:mb-20">
-            <Card className="border-0 bg-gradient-to-br from-pink-100 to-pink-50 shadow-2xl hover:shadow-pink-200/50 transition-all duration-300 hover:scale-105">
+            <Card className="border-0 bg-gradient-to-br from-pink-100 to-pink-50 shadow-md hover:shadow-pink-200/50 transition-all duration-300 hover:scale-105">
               <CardContent className="p-6 sm:p-8 lg:p-10 flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-6 lg:space-x-8">
-                <div className="w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-r from-pink-500 to-red-500 rounded-full flex items-center justify-center flex-shrink-0 shadow-xl">
+                <div className="w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-r from-pink-500 to-red-500 rounded-full flex items-center justify-center mx-auto shadow-xl">
                   <Gift className="h-8 w-8 sm:h-10 sm:w-10 text-white" />
                 </div>
                 <div className="text-center sm:text-left">
@@ -295,9 +290,9 @@ export default function SadorFashionStore() {
                 </div>
               </CardContent>
             </Card>
-            <Card className="border-0 bg-gradient-to-br from-orange-100 to-orange-50 shadow-2xl hover:shadow-orange-200/50 transition-all duration-300 hover:scale-105">
+            <Card className="border-0 bg-gradient-to-br from-orange-100 to-orange-50 shadow-md hover:shadow-orange-200/50 transition-all duration-300 hover:scale-105">
               <CardContent className="p-6 sm:p-8 lg:p-10 flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-6 lg:space-x-8">
-                <div className="w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-r from-orange-500 to-red-500 rounded-full flex items-center justify-center flex-shrink-0 shadow-xl">
+                <div className="w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-r from-orange-500 to-red-500 rounded-full flex items-center justify-center mx-auto shadow-xl">
                   <Clock className="h-8 w-8 sm:h-10 sm:w-10 text-white" />
                 </div>
                 <div className="text-center sm:text-left">
@@ -468,7 +463,7 @@ export default function SadorFashionStore() {
             </p>
           </div>
 
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-8 mb-12 sm:mb-16">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-8 mb-12 sm:mb-16">
             <Link href="https://t.me/sador_onlineshop" className="group">
               <Card className="border-0 shadow-2xl hover:shadow-3xl transition-all duration-300 group-hover:-translate-y-3 group-hover:scale-105 bg-gradient-to-br from-blue-50 to-blue-100 rounded-3xl">
                 <CardContent className="p-6 sm:p-8 lg:p-10 text-center space-y-4 sm:space-y-6">
@@ -513,13 +508,13 @@ export default function SadorFashionStore() {
 
             <Link href="mailto:sadorshopping@gmail.com" className="group">
               <Card className="border-0 shadow-2xl hover:shadow-3xl transition-all duration-300 group-hover:-translate-y-3 group-hover:scale-105 bg-gradient-to-br from-orange-50 to-orange-100 rounded-3xl">
-                <CardContent className="p-6 sm:p-7 lg:p-8 text-center space-y-3 sm:space-y-4">
+                <CardContent className="p-4 sm:p-6 lg:p-8 text-center space-y-3 sm:space-y-4">
                   <div className="w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-r from-orange-500 to-orange-600 rounded-full flex items-center justify-center mx-auto group-hover:shadow-orange-500/50 transition-all duration-300 shadow-xl">
                     <Mail className="w-8 h-8 sm:w-10 sm:h-10 text-white" />
                   </div>
                   <div>
                     <h3 className="text-lg sm:text-xl font-black text-gray-900 mb-1 sm:mb-2">Email</h3>
-                    <p className="text-xs sm:text-sm text-gray-600 font-semibold break-all leading-tight">
+                    <p className="text-xs sm:text-sm text-gray-600 font-semibold break-words leading-tight px-1">
                       sadorshopping@gmail.com
                     </p>
                   </div>
@@ -536,7 +531,7 @@ export default function SadorFashionStore() {
       </section>
 
       <footer className="bg-gray-900 text-white py-8 sm:py-12">
-        <div className="max-w-7xl mx-auto px-8 sm:px-6 lg:px-12">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-12 mb-8 sm:mb-10">
             <div className="space-y-4 sm:space-y-6">
               <div className="flex items-center space-x-3">
