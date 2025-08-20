@@ -54,7 +54,7 @@ export default function SadorFashionStore() {
       name: "Women's Top",
       price: "3,400 ETB",
       category: "Clothing",
-      description: "Set of 3 stylish minimalist tops.c:\Users\Hp\Downloads\her03.jpg",
+      description: "Set of 3 stylish minimalist tops.",
       image: "/images/womentop.jpg?height=400&width=400",
       inStock: false,
       preOrder: "15-17 days",
