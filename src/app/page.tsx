@@ -1,4 +1,5 @@
 
+
 "use client"
 
 import { Button } from "@/components/ui/button"
@@ -7,6 +8,7 @@ import { Badge } from "@/components/ui/badge"
 import { ShoppingBag, Star, Truck, Gift, Clock, MapPin, Phone, Mail, Menu, X } from "lucide-react"
 import Link from "next/link"
 import { useState } from "react"
+import Image from "next/image"
 
 export default function SadorFashionStore() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
@@ -95,7 +97,7 @@ export default function SadorFashionStore() {
       <div className="bg-gradient-to-r from-pink-500 via-red-500 to-orange-500 text-white py-2 sm:py-3 px-2 sm:px-4 text-center shadow-lg">
         <div className="max-w-7xl mx-auto">
           <p className="text-xs sm:text-sm font-bold tracking-wide">
-            FREE DELIVERY 5,000+ ETB • SPECIAL DISCOUNTS 3+ ITEMS
+             FREE DELIVERY 5,000+ ETB • SPECIAL DISCOUNTS 3+ ITEMS 
           </p>
         </div>
       </div>
@@ -229,31 +231,41 @@ export default function SadorFashionStore() {
         </div>
       </section>
 
-      <section id="about" className="py-16 sm:py-20 lg:py-28 bg-gradient-to-br from-pink-50 via-white to-orange-50">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-12 text-center">
-          <div className="space-y-8 sm:space-y-10">
+       <section id="about" className="py-12 sm:py-16 lg:py-20 bg-gradient-to-br from-pink-50 via-white to-orange-50">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-12">
+          <div className="text-center mb-12 sm:mb-16">
             <div className="space-y-4 sm:space-y-6">
               <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black bg-gradient-to-r from-pink-600 to-orange-600 bg-clip-text text-transparent tracking-tight">
                 About Sador
               </h2>
               <div className="w-16 sm:w-24 h-1 sm:h-2 bg-gradient-to-r from-pink-500 to-orange-500 mx-auto shadow-lg rounded-full"></div>
             </div>
-            <div className="space-y-6 sm:space-y-10 text-lg sm:text-xl text-gray-700 leading-relaxed max-w-4xl mx-auto">
-              <p className="text-xl sm:text-2xl font-bold text-gray-900">
+          </div>
+
+          <div className="text-center space-y-6 sm:space-y-8">
+            <div className="space-y-4 sm:space-y-6">
+              <h3 className="text-2xl sm:text-3xl lg:text-4xl font-black text-gray-900 leading-tight">
+                Your Premier Fashion Destination
+              </h3>
+              <p className="text-lg sm:text-xl text-gray-700 leading-relaxed max-w-3xl mx-auto">
                 Sador Shopping & Fashion is your go-to online store for trendy, high-quality clothing and unique gift
                 items.
               </p>
-              <p className="text-base sm:text-lg">
+              <p className="text-base sm:text-lg text-gray-600 leading-relaxed max-w-2xl mx-auto">
                 From stylish outfits to elegant perfumes, bags, and accessories, we bring you products that match your
                 style and personality.
               </p>
-              <p className="text-pink-600 font-black text-xl sm:text-2xl">
+            </div>
+
+            <div className="bg-gradient-to-r from-pink-500 to-orange-500 p-8 sm:p-10 rounded-3xl shadow-2xl max-w-2xl mx-auto">
+              <p className="text-white font-black text-xl sm:text-2xl leading-relaxed">
                 Our goal is to make shopping easy, affordable, and exciting for everyone.
               </p>
             </div>
           </div>
         </div>
       </section>
+
 
       <section id="shop" className="py-16 sm:py-20 lg:py-28 bg-gradient-to-br from-pink-50 via-white to-orange-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
@@ -305,10 +317,13 @@ export default function SadorFashionStore() {
                 className="group border-0 shadow-2xl hover:shadow-3xl transition-all duration-500 bg-white overflow-hidden hover:scale-105 hover:-translate-y-2 rounded-3xl"
               >
                 <div className="relative overflow-hidden rounded-t-3xl">
-                  <img
+                  <Image
                     src={product.image || "/placeholder.svg"}
                     alt={product.name}
+                    width={500} 
+                    height={320} 
                     className="w-full h-64 sm:h-72 lg:h-80 object-cover group-hover:scale-110 transition-transform duration-500"
+                    priority={true} 
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent group-hover:from-pink-500/40 transition-all duration-300"></div>
                   <div className="absolute top-3 sm:top-4 right-3 sm:right-4">
@@ -385,7 +400,7 @@ export default function SadorFashionStore() {
                   <Truck className="h-10 w-10 sm:h-12 sm:w-12 text-white" />
                 </div>
                 <div className="space-y-4 sm:space-y-6">
-                  <h3 className="text-2xl sm:text-3xl font-black text-gray-900">Delivery Areas</h3>
+                  <h3 className="text-2xl sm:text-3xl lg:text-4xl font-black text-gray-900">Delivery Areas</h3>
                   <div className="space-y-3 sm:space-y-4">
                     <div className="flex items-center justify-center space-x-3 sm:space-x-4">
                       <MapPin className="h-5 w-5 sm:h-6 sm:w-6 text-blue-500" />
@@ -410,7 +425,7 @@ export default function SadorFashionStore() {
                   <Gift className="h-10 w-10 sm:h-12 sm:w-12 text-white" />
                 </div>
                 <div className="space-y-4 sm:space-y-6">
-                  <h3 className="text-2xl sm:text-3xl font-black text-gray-900">Free Delivery</h3>
+                  <h3 className="text-2xl sm:text-3xl lg:text-4xl font-black text-gray-900">Free Delivery</h3>
                   <p className="text-gray-700 leading-relaxed text-base sm:text-lg">
                     Enjoy free delivery on all orders above 5,000 ETB
                   </p>
@@ -427,7 +442,7 @@ export default function SadorFashionStore() {
                   <Star className="h-10 w-10 sm:h-12 sm:w-12 text-white" />
                 </div>
                 <div className="space-y-4 sm:space-y-6">
-                  <h3 className="text-2xl sm:text-3xl font-black text-gray-900">Special Discounts</h3>
+                  <h3 className="text-2xl sm:text-3xl lg:text-4xl font-black text-gray-900">Special Discounts</h3>
                   <p className="text-gray-700 leading-relaxed text-base sm:text-lg">
                     Get exclusive discounts when ordering 3 or more items
                   </p>
@@ -520,78 +535,78 @@ export default function SadorFashionStore() {
         </div>
       </section>
 
-      <footer className="bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white py-16 sm:py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-12 sm:gap-16 mb-12 sm:mb-16">
-            <div className="space-y-6 sm:space-y-8">
-              <div className="flex items-center space-x-3 sm:space-x-4">
-                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-r from-pink-500 to-orange-500 rounded-full flex items-center justify-center shadow-xl">
-                  <ShoppingBag className="h-5 w-5 sm:h-6 sm:w-6 text-white" />
+      <footer className="bg-gray-900 text-white py-8 sm:py-12">
+        <div className="max-w-7xl mx-auto px-8 sm:px-6 lg:px-12">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-12 mb-8 sm:mb-10">
+            <div className="space-y-4 sm:space-y-6">
+              <div className="flex items-center space-x-3">
+                <div className="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-r from-pink-500 to-orange-500 rounded-full flex items-center justify-center shadow-lg">
+                  <ShoppingBag className="h-4 w-4 sm:h-5 sm:w-5 text-white" />
                 </div>
                 <div>
-                  <h3 className="text-2xl sm:text-3xl font-black">Sador</h3>
-                  <p className="text-sm sm:text-base text-gray-400 font-semibold">Fashion Store</p>
+                  <h3 className="text-xl sm:text-2xl font-black">Sador</h3>
+                  <p className="text-xs sm:text-sm text-gray-400 font-semibold">Fashion Store</p>
                 </div>
               </div>
-              <p className="text-gray-300 leading-relaxed text-base sm:text-lg">
+              <p className="text-gray-300 leading-relaxed text-sm sm:text-base">
                 Style Meets Expectation - Your destination for premium fashion and luxury accessories.
               </p>
             </div>
 
-            <div className="space-y-6 sm:space-y-8">
-              <h4 className="text-xl sm:text-2xl font-black">Quick Links</h4>
-              <div className="space-y-3 sm:space-y-4">
+            <div className="space-y-4 sm:space-y-6">
+              <h4 className="text-lg sm:text-xl font-black">Quick Links</h4>
+              <div className="space-y-2 sm:space-y-3">
                 <Link
                   href="#shop"
-                  className="block text-gray-300 hover:text-pink-400 transition-colors text-base sm:text-lg font-semibold"
+                  className="block text-gray-300 hover:text-pink-400 transition-colors text-sm sm:text-base font-semibold"
                 >
                   Shop
                 </Link>
                 <Link
                   href="#about"
-                  className="block text-gray-300 hover:text-pink-400 transition-colors text-base sm:text-lg font-semibold"
+                  className="block text-gray-300 hover:text-pink-400 transition-colors text-sm sm:text-base font-semibold"
                 >
                   About
                 </Link>
                 <Link
                   href="#contact"
-                  className="block text-gray-300 hover:text-pink-400 transition-colors text-base sm:text-lg font-semibold"
+                  className="block text-gray-300 hover:text-pink-400 transition-colors text-sm sm:text-base font-semibold"
                 >
                   Contact
                 </Link>
                 <Link
                   href="#gift-shop"
-                  className="block text-gray-300 hover:text-pink-400 transition-colors text-base sm:text-lg font-semibold"
+                  className="block text-gray-300 hover:text-pink-400 transition-colors text-sm sm:text-base font-semibold"
                 >
                   Gift Shop
                 </Link>
               </div>
             </div>
 
-            <div className="space-y-6 sm:space-y-8 sm:col-span-2 lg:col-span-1">
-              <h4 className="text-xl sm:text-2xl font-black">Follow Us</h4>
-              <div className="space-y-3 sm:space-y-4">
+            <div className="space-y-4 sm:space-y-6 sm:col-span-2 lg:col-span-1">
+              <h4 className="text-lg sm:text-xl font-black">Follow Us</h4>
+              <div className="space-y-2 sm:space-y-3">
                 <Link
                   href="https://t.me/sador_onlineshop"
-                  className="block text-gray-300 hover:text-pink-400 transition-colors text-base sm:text-lg font-semibold"
+                  className="block text-gray-300 hover:text-pink-400 transition-colors text-sm sm:text-base font-semibold"
                 >
                   Telegram
                 </Link>
                 <Link
                   href="https://instagram.com/sador_shopping"
-                  className="block text-gray-300 hover:text-pink-400 transition-colors text-base sm:text-lg font-semibold"
+                  className="block text-gray-300 hover:text-pink-400 transition-colors text-sm sm:text-base font-semibold"
                 >
                   Instagram
                 </Link>
                 <Link
                   href="https://tiktok.com/@sador.onlineshop"
-                  className="block text-gray-300 hover:text-pink-400 transition-colors text-base sm:text-lg font-semibold"
+                  className="block text-gray-300 hover:text-pink-400 transition-colors text-sm sm:text-base font-semibold"
                 >
                   TikTok
                 </Link>
                 <Link
                   href="mailto:sadorshopping@gmail.com"
-                  className="block text-gray-300 hover:text-pink-400 transition-colors text-base sm:text-lg font-semibold"
+                  className="block text-gray-300 hover:text-pink-400 transition-colors text-sm sm:text-base font-semibold"
                 >
                   Email
                 </Link>
@@ -599,8 +614,8 @@ export default function SadorFashionStore() {
             </div>
           </div>
 
-          <div className="border-t border-gray-700 pt-8 sm:pt-10 text-center">
-            <p className="text-gray-400 text-base sm:text-lg">&copy; 2024 Sador Fashion Store. All rights reserved.</p>
+          <div className="border-t border-gray-700 pt-6 sm:pt-8 text-center">
+            <p className="text-gray-400 text-sm sm:text-base">&copy; 2024 Sador Fashion Store. All rights reserved.</p>
           </div>
         </div>
       </footer>
